@@ -19,6 +19,13 @@ body{
     background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/MsTeams\ Background\ 2.jpg);
     background-size: cover;
     background-position: right;
+    padding: 1rem;
+}
+
+@media (max-width:710px) {
+    body{
+        background-position: top;
+    }
 }
 
 /* Form */
