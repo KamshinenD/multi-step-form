@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="shortcut icon" href="./img/logoIcon.png" type="image/x-icon">
-    <script src="./JS/script.js" defer></script>
     <title>Registration Form</title>
 </head>
 <body>
 
-    <form action="#" class="form">
+    <form action="#" class="form" id="form">
         <h1 class="form-title"> Registration Form</h1>
         <p id="percentage">0% completed</p>
         <!-- Progress bar -->
@@ -83,13 +83,21 @@
             </div>
             <div class="input-group">
                 <label for="password">Confirm Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="passwordConfirm">
             </div>
             <div class="btn-group">
                 <a href="#" class="btn btn-prev">Previous</a>
-                <input type="submit" value="submit" class="btn">
+                <input type="submit" value="submit" class="btn" id="submitbtn">
             </div>
         </div>
     </form>
+    <div class="confirmation" id="confirm">
+        <h1>Thanks </h1>
+        <div class="confirm-icon"><i class="fa-solid fa-check"></i></div>
+        <p>Hi <span id="name">Kam</span>, Your registration is succesful, please check your mail, we have sent you a link to verify your account</p>
+        <p>Kind Regards</p>
+    </div>
+
+    <script src="./JS/script.js"></script>
 </body>
 </html>

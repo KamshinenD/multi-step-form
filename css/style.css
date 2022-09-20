@@ -18,7 +18,7 @@ body{
     min-height: 100vh;
     background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/MsTeams\ Background\ 2.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     /* padding: 1rem; */
 }
 
@@ -38,6 +38,7 @@ body{
     border: 1px solid #ccc; 
     background-color: white;
     box-shadow: 5px 5px 15px #888888;
+    display: block;
 }
 
 .progress-bar{
@@ -177,4 +178,32 @@ label{
         transform: scale(1, 1);
         opacity: 1;
     }
+    /* 0%{transform:translateX(-50px) ;}
+    100%{transform:translateX(200px) ;} */
+}
+
+.confirmation{
+    width: clamp(400px, 30%, 500px);
+    /* outline: 1px solid gray; */
+    margin: 0 auto;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc; 
+    background-color: white;
+    box-shadow: 5px 5px 15px #888888;
+    display: none;
+    text-align: center;
+    color: gray;
+}
+
+.confirm-icon{
+    color: white;
+    font-size: 5rem;
+    background-color: green;
+    width: 9rem;
+    margin: auto;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    padding: 2rem;
 }
